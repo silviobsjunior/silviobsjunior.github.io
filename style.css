@@ -204,61 +204,6 @@ body {
     padding-left: 5px;
 }
 
-.container {
-    display: flex;
-    width: 100%;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    perspective: 90px;
-    background: #70c6c7;
-}
-
-.card {
-    position: relative;
-    width: 6rem;
-    height: 6rem;
-    margin: 0.5rem;
-    text-align: center;
-    line-height: 6rem;
-    color: #ecf0f1;
-    font-family: Verdana;
-    border-radius: 0.8rem;
-    transform-style: preserve-3d;
-}
-
-.face {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.8rem;
-    background-size: cover;
-    background-position: center center;
-    transition: transform 0.5s ease-in-out;
-}
-
-.face--front {
-    background: #2c3e50;
-    font-size: 1rem;
-}
-
-.face--back {
-    background: #2c3e50;
-    font-size: 1rem;
-    transform: rotateX(180deg)
-}
-
-.card:hover .face--front {
-    transform: rotateX(-180deg);
-}
-
-.card:hover .face--back {
-    transform: rotateX(0deg);
-}
-
 /* Media queries */
 @media screen and (max-width:780px) {
     .experience-contents,
